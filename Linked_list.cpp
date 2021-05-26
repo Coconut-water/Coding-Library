@@ -19,34 +19,6 @@
 #include <bitset>
 using namespace std;
 const char newl='\n';
-#define ll long long
-#define all(x) begin(x), end(x)
-#define sz(x) (int)(x).size()
-#define mp make_pair
-#define debug(x) cerr << (#x) << "'s value is " << (x) << newl
-typedef long long int lld;
-const int MAX_N = 1e5 + 1;
-const ll MOD = 1e9 + 7;
-const ll INF = 1e9;
-void usaco(string filename) {
-  // #pragma message("be careful, freopen may be wrong")
-	freopen((filename + ".in").c_str(), "r", stdin);
-	freopen((filename + ".out").c_str(), "w", stdout);
-}
-int findpos(int arr[],int a,int n){
-    for(int i = 0;i<n;i++){
-        if(arr[i]==a){
-            return i;
-        }
-    }
-    return -1;
-}
-void arrxqc(int arr[], int le){
-    for(int my_var = 0;my_var<le;my_var++){
-        cout<<arr[my_var]<<" ";
-    }
-    cout<<newl;
-}
 // Main code starts here
 class Node{
 	public:
