@@ -43,6 +43,9 @@ Ele_of_stack* pop(Ele_of_stack*head){
 	head = head->next;
 	return head;
 }
+bool empty(Ele_of_stack* head){
+	return (head==NULL);
+}
 void answer(int test){
 	// initializing a new stack;
 	Ele_of_stack* head;
@@ -56,7 +59,7 @@ void answer(int test){
 	// pop removes the topmost element
 	head = pop(head);
 	cout<<top(head)<<newl;
-
+	cout<<empty(head);
 }
 int main(){
     ios_base::sync_with_stdio(false);
